@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/products.css">
+    <title>Payment - Skincare Shop</title>
+    
+</head>
+<body>
+
+    <h1>Complete Your Payment</h1>
+
+    <section class="c" id="cart-summary">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be added here dynamically -->
+        </ul>
+        <p>Total: $<span id="total-price"></span></p>
+    </section>
+
+    <form  id="payment-form">
+        <h2>Payment Details</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="CardNumber">Card Number:</label>
+        <input type="text" id="CardNumber" name="CardNumber" required>
+
+        <label for="CardName">Card Name:</label>
+        <input type="text" id="CardName" name="CardName" required>
+
+        <label for="expirymonth">Expiry Month:</label>
+        <input type="text" id="expirymonth" name="expirymonth" required>
+
+        <label for="expiryyear">Expiry Year:</label>
+        <input type="text" id="expiryyear" name="expiryyear" required>
+
+        <label for="CVV">CVV:</label>
+        <input type="text" id="CVV" name="CVV" required>
+        <button style="background-color: #ff6170;" class="pay-btn" type="submit">Pay Now</button>
+    </form>
+
+    <script>
+        // Load cart items from localStorage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const totalPrice = localStorage.getItem('totalPrice') || 0;
+
+        // Display cart items
+        const cartItems = document.getElementById('cart-items');
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.innerText = `${item.product} - ${item.price} LE`;
+            cartItems.appendChild(li);
+        });
+
+        // Display total price
+        document.getElementById('total-price').innerText = totalPrice ;
+        // Handle payment form submission
+        document.getElementById('payment-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Payment successful!');
+            
+            // Clear cart and redirect to homepage
+            localStorage.clear();
+            window.location.href = 'products.html';
+        });
+    </script>
+</body>
+</html>

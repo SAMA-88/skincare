@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Main Page</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<style>
+
+.mySlides {display: none}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  background-image: url(https://media.istockphoto.com/id/1442556244/photo/portrait-of-young-beautiful-woman-with-perfect-smooth-skin-isolated-over-white-background.jpg?s=612x612&w=0&k=20&c=4S7HufG4HDXznwuxFdliWndEAcWGKGvgqC45Ig0Zqog=);
+}
+
+ .center{
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+ }
+
+ 
+       nav {
+            background-color: #1b1b1b;
+            overflow: hidden;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px rgb(250, 229, 242);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav ul li {
+            padding: 14px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+
+header {
+            background-color: #ff6170;
+            color: white;
+            padding: 1px ;
+            text-align: center;
+            border-radius: 20px;
+            
+        }
+        li.dropdown {
+  display: inline-block;
+}
+
+header .logo {
+            font-size: 24px;
+            font-weight: bold;}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+  
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .video-bg video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+        }
+       
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Samsoma Skincare </h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="mainpage.html" >Home</a></li>
+        <li><a href="products.html">Products</a></li>
+       
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="tips.html">Tips & Routine</a></li>
+    </ul>
+</nav>
+
+<div class="video-bg">
+  <video autoplay muted loop>
+      <source src="../image/v2.mp4">Closeup personable beautiful perfect natural skin woman hold mockup tube moisturizer cream for skincare treatment product advertising against white background. Stock Videos by Vecteezy" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br>
+<div class="banner">
+    <h1 style="text-align:center;">Your Skin Deserves the Best</h1>
+</div>
+</body>
+</html>

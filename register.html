@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<title>Skincare</title>
+<style>
+    .r {
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 5px;
+        color: white;
+        background-color: #ff6170;
+    }
+    header {
+        background-color: #ff949e;
+        color: rgb(0, 0, 0);
+        padding: 10px 0;
+        text-align: center;
+        border-radius: 5px;
+        border-color: black;
+        border-radius: 30px;
+        box-shadow: 10px 10px 5px lightblue;
+    }
+    .form-group {
+        contain: center;
+    }
+    .container {
+        width: 400px;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px lightblue;
+    }
+    .container h2 {
+        margin-bottom: 20px;
+    }
+    .container label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"], input[type="password"], textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    body {
+        background-image:  url('https://media.gettyimages.com/id/1223714147/photo/natural-oil-cosmetics-with-shadows.jpg?s=612x612&w=0&k=20&c=EKCyXaaxVFha_B0ocoKUGL8F45ZlHNu7X-lZnLxTS0c=');
+    }
+</style>
+</head>
+<body>
+    <br>
+    <header>
+        <h2>Welcome to Samsoma Skincare</h2>
+    </header>
+    <br><br>
+    <div class="container">
+        <h1>Skincare Registration</h1>
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="FirstName">First Name</label>
+                <input type="text" id="FirstName" name="FirstName" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="LastName">Last Name</label>
+                <input type="text" id="LastName" name="LastName" required>
+            </div>
+          
+            <div class="form-group">
+                <label for="Phone">Phone:</label><br>
+                <input type="text" id="Phone" name="Phone" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="Email" id="Email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="Password">Password:</label><br>
+                <input type="Password" id="Password" name="Password" size="6" placeholder="[0-8]" pattern="[0-9]{8}" required>
+            </div>
+            <div class="form-group">
+                <label for="Address">Address:</label><br>
+                <textarea id="Address" name="Address" rows="4" cols="50" required></textarea>
+            </div>
+            <br>
+            <button class="r">Register</button>
+            <a href="/login.html"></a>
+            <p>
+                Already have an account?<a href="login.html">login</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>

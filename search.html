@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image:  url('https://media.gettyimages.com/id/1223714147/photo/natural-oil-cosmetics-with-shadows.jpg?s=612x612&w=0&k=20&c=EKCyXaaxVFha_B0ocoKUGL8F45ZlHNu7X-lZnLxTS0c=');
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .search-container {
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .search-container input[type="text"] {
+            flex: 1;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .search-container button {
+            background-color: #ff6170;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-container button:hover {
+            background-color: #ff6170;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search for skincare products...">
+        <button type="submit">Search</button>
+    </div>
+
+</body>
+</html>
